@@ -52,6 +52,49 @@
 #     Assume that the user will enter valid data.
 #     Only continue if the user agrees to.
 
-power = input("What number would you like to go up to? ")
+"""
+What number would you like to go up to? 5
 
+Here is your table!
+
+number | squared | cubed
+------ | ------- | -----
+1      | 1       | 1
+2      | 4       | 8
+3      | 9       | 27
+4      | 16      | 64
+5      | 25      | 125
+"""
+
+#while True:
+# print('number | squared | cubed')
+#     print('------ | ------- | -----')
+
+usernum = int(input("What number would you like to go up to? "))
 print("Here is your table!")
+print("number | squared | cubed")
+print("_________________________")
+for i in range(1,usernum + 1):
+    #there is more efficient  ways  to store andmanipulate  i that can be revisited
+    power = i
+    power2 = i * i
+    power3 = i * i * i
+    #f string to place in variables
+    print(f" {power:<5} | {power2:^7} | {power3:5}")
+
+"""Convert given number grades into letter grades.
+
+    Prompt the user for a numerical grade from 0 to 100.
+    Display the corresponding letter grade.
+    Prompt the user to continue.
+    Assume that the user will enter valid integers for the grades.
+    The application should only continue if the user agrees to.
+
+    Grade Ranges:
+        A : 100 - 88
+        B : 87 - 80
+        C : 79 - 67
+        D : 66 - 60
+        F : 59 - 0
+"""
+grade=input("Enter a numerical grade from 0 to 100")
