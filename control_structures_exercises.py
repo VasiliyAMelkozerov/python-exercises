@@ -5,31 +5,31 @@
 
 #we can setup a while loop
 
-# while True:
-#     yike = input('Input odd number from 1 - 50: ')
-#     if yike.isdigit(): #returns a true false check if intger
-#         yike=int(yike)  #data type converstion after digit confirmation
-#         if yike % 2 == 0:
-#             print('Sir this is a Wendy\'s. JK that\'s not an odd number')
-#         else:
-#             print("checks out")
-#             break
-#     else:
-#         print("A number, please")
+while True:
+    yike = input('Input odd number from 1 - 50: ')
+    if yike.isdigit(): #returns a true false check if intger
+        yike=int(yike)  #data type converstion after digit confirmation
+        if yike % 2 == 0:
+            print('Sir this is a Wendy\'s. JK that\'s not an odd number')
+        else:
+            print("checks out")
+            break
+    else:
+        print("A number, please")
 
-# print("Number to skip is: ",yike)
+print("Number to skip is: ",yike)
 
-# for i in range(50):
-#     if yike == i:
-#         print("Yikes! Skipping number:", yike)
-#         #the edit here was that we wanted is to order the above function first 
-#         #that way the leftover value will then be iteratted
-#         #we use elif
-#     elif i % 2 == 1:
-#         print("Here is an odd number:",i)
+for i in range(50):
+    if yike == i:
+        print("Yikes! Skipping number:", yike)
+        #the edit here was that we wanted is to order the above function first 
+        #that way the leftover value will then be iteratted
+        #we use elif
+    elif i % 2 == 1:
+        print("Here is an odd number:",i)
 
-# if yike.isdigit():
-#     print("Number to skip is: ",yike)
+if yike.isdigit():
+    print("Number to skip is: ",yike)
 
 #I don't think i will really need to use is digit because i am straining my input out as a integer
 
